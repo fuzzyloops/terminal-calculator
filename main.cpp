@@ -9,7 +9,7 @@ int main()
     while(!finished)
     {
         std::cout << "\n";
-        std::cout << "What would you like to calculate?" << std::endl;
+        std::cout << "What would you like to calculate? (Operators are: +, -, *, /, and p)" << std::endl;
         std::cout << "\n";
         std::cin >> command;
         std::cout << "\n";

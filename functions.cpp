@@ -60,11 +60,11 @@ void readCommand(std::string command)
         }
 
         ///Look for firstnumber,secondnumber
-        if(command[i] >= 48 && command[i] <= 57 && firstNumFound == false)
+        if(((command[i] >= 48 && command[i] <= 57) || (command[i] == '.')) && firstNumFound == false)
         {
             firstNum += command[i];
         }
-        else if(command[i] >= 48 && command[i] <= 57 && firstNumFound == true)
+        else if(((command[i] >= 48 && command[i] <= 57) || (command[i] == '.')) && firstNumFound == true)
         {
             secondNum += command[i];
         }
